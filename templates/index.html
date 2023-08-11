@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask me anything
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='image.jpg') }}" alt="Your Image" class="logo">
+        <h1>Ask me anything</h1>
+        <input type="text" id="query" placeholder="search...">
+        <button onclick="search()">GoGo!</button>
+        <div id="results" class="results-box"></div>
+    </div>
+</body>
+</html>
